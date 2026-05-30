@@ -1,0 +1,39 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Database — never commit this, it contains real inspection logs
+casb.db
+
+# mitmproxy certificates — machine specific, security risk
+.mitmproxy/
+*.pem
+*.p12
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Startup scripts — machine/OS specific
+start.ps1
+start.bat
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage

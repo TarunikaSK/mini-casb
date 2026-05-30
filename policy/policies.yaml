@@ -1,0 +1,25 @@
+policies:
+  - name: block_source_code
+    category: source_code
+    destination: "*.googleapis.com"
+    min_confidence: 0.75
+    action: BLOCK
+
+  - name: block_credentials
+    category: credentials
+    destination: "*"
+    min_confidence: 0.75
+    action: BLOCK
+
+  - name: dry_run_pii
+    category: pii
+    destination: "*"
+    min_confidence: 0.70
+    action: DRY_RUN
+
+  - name: block_bypass_attempts
+    category: "*"
+    destination: "*"
+    min_confidence: 0.0
+    bypass_only: true
+    action: BLOCK
